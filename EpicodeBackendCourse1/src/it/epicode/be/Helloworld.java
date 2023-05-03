@@ -34,17 +34,17 @@ public static void main (String[] args)
 		
 		//ES 1B
 		System.out.println("ES 1B");
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Inserisci la prima stringa: ");
-		String s1=sc.nextLine();
-		System.out.print("Inserisci la seconda stringa: ");
-		String s2=sc.nextLine();
-		System.out.print("Inserisci la terza stringa: ");
-		String s3=sc.nextLine();
-		
-		System.out.println("Stringa secondo l'ordine di inserimento: "+s1+" "+s2+" "+s3);
-		System.out.println("Stringa secondo l'ordine inverso di inserimento: "+s3+" "+s2+" "+s1);
-		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("Inserisci la prima stringa: ");
+			String s1=sc.nextLine();
+			System.out.print("Inserisci la seconda stringa: ");
+			String s2=sc.nextLine();
+			System.out.print("Inserisci la terza stringa: ");
+			String s3=sc.nextLine();
+			
+			System.out.println("Stringa secondo l'ordine di inserimento: "+s1+" "+s2+" "+s3);
+			System.out.println("Stringa secondo l'ordine inverso di inserimento: "+s3+" "+s2+" "+s1);
+		}
 		//ES 2A
 		System.out.println("ES 2A");
 		System.out.println("Il risultato del perimetro è: "+perimetroRettangolo(2.5,3.2));

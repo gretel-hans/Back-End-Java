@@ -11,6 +11,9 @@ public class MainProject {
 		double d = 25.3;
 		float f = 25.3f;
 		System.out.println(d);
+		System.out.println(s);
+		System.out.println(f);
+		System.out.println(c);
 		
 		int array[]= new int[5];
 		
